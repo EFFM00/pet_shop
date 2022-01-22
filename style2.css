@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #F0A83E;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado-desktop {
+    background-color: #222222;
+    display: none;
+    justify-content: space-between;
+    color: #fff;
+    padding: .3rem 3rem;
+}
+
+header nav, .encabezado-desktop {
+    display: none;
+}
+
+.idiomaMoneda {
+    display: flex;
+    align-items: center;
+}
+
+.idiomaMoneda p {
+    margin-left: 2rem;
+}
+
+.logoConNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header i {
+    color: #fff;
+}
+
+nav {
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li{
+    margin-left: 2.5rem;
+}
+
+.menuHuellitas a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner {
+    background: url("./img/comederoBanner.png");
+    height: 410px;
+    position: relative;
+}
+
+.textoBanner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 90vw;
+    max-width: 500px;
+    position: absolute;
+    bottom: 120px;
+    right: 1px;
+    margin: 0 3rem;
+}
+
+.textoBanner p {
+    font-size: 1.5rem;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #3C2313;
+    padding: 0.5rem;
+    width: 80%;
+}
+
+.textoBanner h2 {
+    font-size: 1.2rem;
+    color: #3C2313;
+    margin: 1rem 0;
+}
+
+.textoBanner a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background-color: #F0A83E;
+    border-radius: 4px;
+    width: 10rem;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.derechos {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3C2313;
+}
+
+.subcontacto {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+    color: white;
+}
+
+#logoFooter {
+    display: flex;
+    align-self: center;
+}
+
+.iconContact {
+    padding-right: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .encabezado-desktop {
+        display: flex;
+    }
+
+    .logoConNav {
+        display: flex;
+        padding: 2rem 3rem;
+        
+    }
+
+    .logoConNav i {
+        display: none;
+    }
+
+    header nav {
+        display: inline-block;
+    }
+
+    .textoBanner {
+        width: 40vw;
+        align-items: center;
+    }
+
+}
