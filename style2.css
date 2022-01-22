@@ -110,13 +110,27 @@ ul li{
     padding: 1rem;
 }
 
+.prodCentral {
+    margin: 2.5rem 3rem;
+}
 
+.prodDest {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #3C2313;
+    margin-bottom: 2.5rem;
+}
 
+.prodDest h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1rem 0 1.5rem;
+}
 
-
-
-
-
+.prodDest h2 {
+    font-size: 1rem;
+    font-weight: 400;
+}
 
 
 
