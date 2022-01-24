@@ -7,7 +7,9 @@
         <link rel="stylesheet" href="style2.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <script src="https://kit.fontawesome.com/b77f386241.js" crossorigin="anonymous"></script>
         <title>Pet Shop</title>
     </head>
@@ -24,7 +26,7 @@
             </div>
 
             <div class="logoConNav">
-                <img src="img/logoHeader.png" alt="Logo Front Cants & Dogs">
+                <a href="#"><img src="img/logoHeader.png" alt="Logo Front Cants & Dogs"></a>
 
                 <i class="fas fa-bars"></i>
 
@@ -66,50 +68,75 @@
                     <h1>Productos Destacados</h1>
                     <h2>Comederos - Accesorios - Comida</h2>
                 </div>
-
-                <article>
-                    <img src="img/churrasquito.png" alt="Juguete churrasquito">
-                    <h3>Juguete Churrasquito</h3>
-                    <h4>$150</h4>
-                </article>
-
-                <article>
-                    <img src="img/comedero.png" alt="Comedero">
-                    <h3>Comedero para perro</h3>
-                    <h4>$250</h4>
-                </article>
+                
+                <section class="products">
+                    <article>
+                        <img src="img/churrasquito.png" alt="Juguete churrasquito">
+                        <h3>Juguete Churrasquito </h3>
+                        <h4>$150</h4>
+                    </article>
                     
-                <article>
-                    <img src="img/Huesito.png" alt="Juguete huesito">
-                    <h3>Juguete Huesito</h3>
-                    <h4>$650</h4>
-                </article>
+                    <article>
+                    <img src="img/churrasquito.png" alt="Juguete churrasquito">
+                        <h3>Juguete Churrasquito x4</h3>
+                        <h4>$550</h4>
+                    </article>
+
+                    <article>
+                        <img src="img/comedero.png" alt="Comedero">
+                        <h3>Comedero para perro</h3>
+                        <h4>$250</h4>
+                    </article>
+                    
+                    <article>
+                        <img src="img/comedero.png" alt="Comedero">
+                        <h3>Comedero grande para perro </h3>
+                        <h4>$450</h4>
+                    </article>
+                        
+                    <article>
+                        <img src="img/Huesito.png" alt="Juguete huesito">
+                        <h3>Juguete Huesito</h3>
+                        <h4>$650</h4>
+                    </article>
+
+                    <article>
+                        <img src="img/Huesito.png" alt="Juguete huesito">
+                        <h3>Juguete Huesito Grande</h3>
+                        <h4>$950</h4>
+                    </article>
+
+                        
+                </section>
             </section>
 
             <section class="form">
-                <form action="#" method="get">
+                <h3>Contáctanos</h3>
+                <form action="#" method="get" class="formulario">
                     <input type="text" placeholder="Nombre y Apellido" id="nombre" name="nombre">
                     <input type="email" id="email" name="email" required placeholder="Ingresá tu correo electrónico">
                     <input type="tel" id="tel" name="tel" placeholder="Teléfono">
-                    <button type="reset">Resetear</button>
-                    <button type="submit">Enviar</button>
+                    <div class="botones">
+                        <button type="reset">Resetear</button>
+                        <button type="submit">Enviar</button>
+                    </div>
                 </form>
             </section>
         </main>
 
         <footer>
+            
             <div class="suscripcion">
-                <div>
+                <div class="susText">
                     <img src="./img/enviar-correo.png" 
                     alt="suscripcion">
                     <h4>Suscribite para más novedades</h4>
                 </div>
                 <form action="#">
                     <input type="email" id="email" name="email" required placeholder="Ingresá tu correo electrónico">
-                    <button type="submit">Enviar</button>
+                    <button type="submit">Suscribirse</button>
                 </form>
             </div>
-            
             <div class="contacto">
                 <div>
                     <div class="subcontacto">
@@ -136,8 +163,7 @@
                         </div>
                     </div>
                 </div>
-
-                <img src="img/logoFoot.png" alt="Logo Front Cats & Dogs" id="logoFooter">
+                <a href="#" class="logoFooter"><img src="img/logoFoot.png" alt="Logo Front Cats & Dogs"></a>
             </div>
 
             <p class="derechos">Todos los derechos reservados Front End</p>

@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     background-color: #F0A83E;
     justify-content: space-between;
@@ -61,11 +65,13 @@ ul li{
 .menuHuellitas a{
     color: #fff;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    
 }
 
 .banner {
     background: url("./img/comederoBanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 410px;
     position: relative;
 }
@@ -75,7 +81,6 @@ ul li{
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
     text-align: center;
     width: 90vw;
     max-width: 500px;
@@ -108,6 +113,7 @@ ul li{
     border-radius: 4px;
     width: 10rem;
     padding: 1rem;
+    
 }
 
 .prodCentral {
@@ -116,37 +122,150 @@ ul li{
 
 .prodDest {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     color: #3C2313;
     margin-bottom: 2.5rem;
 }
 
 .prodDest h1 {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight:900;
     margin: 1rem 0 1.5rem;
+
 }
 
 .prodDest h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
+    
 }
 
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-.derechos {
-    background-color: #222222;
-    color: white;
+.products article {
+    background-color: #FBFAF6;
+    margin: 1.8rem;
+    padding: 1rem 2rem;
     text-align: center;
+    transition: all 200ms;
+}
+
+.products article:hover {
+    transform: scale(1.2);
+}
+
+.products article h3 {
+    color: #3C2313;
+    margin-bottom: 0.5rem;
+}
+
+.products article h4 {
+    color:#F0A83E;
+}
+
+.form {
+    margin-bottom: 4rem;
+}
+
+.form h3 {
+    color: #3C2313;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario input {
+    width: 350px;
+    background-color: #3C2313;
+    border-radius: 20px;
+    color: white;
+    padding: 1rem;
+    border: none;
+    margin: 0.4rem;
+    font-weight: 500;
+}
+
+.botones button{
+    margin: 2rem 1rem 0;
+    border: none;
+    padding: 0.5rem 1rem;
+    width: 150px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 1.2rem;
+}
+
+.botones button[type="reset"]{
+    background-color: #8A8787;
+    color: white;
+    font-weight: 600;
+}
+
+.botones button[type="submit"]{
+    background-color: #F0A83E;
+    color: white;
+    font-weight: 600;
+}
+
+.suscripcion {
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.susText {
+    display: flex;
+    align-items: center;
+}
+
+.susText h4 {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.suscripcion form input[type="email"] {
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1rem;
+    border: none;
+    margin: 0.4rem;
+    font-weight: 500;
+}
+
+.suscripcion form button {
+    width: 100px;
+    background-color: #3C2313;
+    color: white;
+    border-radius: 25px;
+    padding: 0.8rem;
+    border: none;
+    margin: 0.4rem;
+    font-weight: 500;
+    font-weight: 700;
+}
+
+.logoFooter {
+    display: flex;
+    align-self: center;
+}
+
+.iconContact {
+    padding-right: 20px;
 }
 
 .contacto {
@@ -157,19 +276,24 @@ ul li{
 
 .subcontacto {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin: 40px;
     color: white;
 }
 
-#logoFooter {
-    display: flex;
-    align-self: center;
+.subcontacto h3 {
+    font-size: 1.5rem;
 }
 
-.iconContact {
-    padding-right: 20px;
+.derechos {
+    background-color: #222222;
+    color: white;
+    text-align: center;
 }
+
+
+
+
 
 @media screen and (min-width: 1024px) {
     .encabezado-desktop {
@@ -193,6 +317,22 @@ ul li{
     .textoBanner {
         width: 40vw;
         align-items: center;
+    }
+
+    .products {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .formulario input {
+        width: 500px;
+    }
+
+    .suscripcion {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
     }
 
 }
