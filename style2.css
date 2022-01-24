@@ -266,6 +266,10 @@ ul li{
     align-self: center;
 }
 
+.logoFooter img {
+    display: inline-block;
+}
+
 .iconContact {
     padding-right: 20px;
 }
@@ -275,13 +279,20 @@ ul li{
     justify-content: space-around;
     background-color: #3C2313;
     flex-direction: column-reverse;
-    padding-top: 1.5rem;
+    padding: 2.5rem 3rem;
+    align-items: center;
+}
+
+.contacto > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .subcontacto {
     display: flex;
-    align-items: flex-start;
-    margin: 40px;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
     color: white;
 }
 
@@ -338,6 +349,8 @@ ul li{
 
     .contacto {
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
 }
